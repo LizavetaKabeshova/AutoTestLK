@@ -14,7 +14,7 @@ public class SeleniumTest {
 
     //1 Create a new test in a new Java class, specify test name in accordance with checking functionality
     @Test
-    public void test1() {
+    public void testExercises() {
         setProperty("webdriver.chrome.driver", "chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -31,6 +31,9 @@ public class SeleniumTest {
 
         //5 Assert User name in the left-top side of screen that user is loggined
         //WebElement userName = driver.findElement(By.xpath("//div[@class='profile-photo']"));
+        //WebElement userName = driver.findElement(By.xpath("//div//span"));
+        //WebElement userName = driver.findElement(By.cssSelector(".hidden"));
+        //WebElement userName = driver.findElement(By.xpath("//span[@class='hidden']"));
         //Assert.assertEquals(userName.getText(), "Piter Chailovskii");
 
         //6 Assert Browser title
