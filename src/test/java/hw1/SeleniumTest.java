@@ -1,40 +1,53 @@
+package hw1;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
-import static java.lang.System.setOut;
-import static java.lang.System.setProperty;
 
+import static java.lang.System.setProperty;
 public class SeleniumTest {
 
-    //1 Create a new test in a new Java class, specify test name in accordance with checking functionality
-    @Test
-    public void testExercises() {
+    /* 1 Create a new test in a new Java class, specify test name in
+    accordance with checking functionality
+    2 Open test site by URL */
+    private WebDriver driver;
+
+    @BeforeMethod(alwaysRun = true)
+    public void setUp() {
         setProperty("webdriver.chrome.driver", "chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
-
-        //2 Open test site by URL
         driver.navigate().to("https://jdi-framework.github.io/tests");
+    }
+    // 10 close driver
+    @AfterMethod(alwaysRun = true)
+    public void turnOff() {
+        driver.close();
+    }
 
+    @Test
+    public void loginTest() {
         //3 Assert Browser title
         Assert.assertEquals(driver.getTitle() , "Index Page");
 
         //4 Perform login
-        driver.manage().deleteAllCookies();
-        driver.manage().addCookie(new Cookie("epam", "1234"));
+        //driver.manage().deleteAllCookies();
+        //driver.manage().addCookie(new Cookie("epam", "1234"));
+        driver.findElement(By.xpath("/html/body/div/header/div/nav/ul[2]/li")).click();
+        driver.findElement(By.xpath("//*[@id=\"Login\"]")).sendKeys("epam");
+        driver.findElement(By.xpath("//*[@id=\"Password\"]")).sendKeys("1234");
+        driver.findElement(By.xpath("/html/body/div/header/div/nav/ul[2]/li/div/form/button")).click();
 
         //5 Assert User name in the left-top side of screen that user is loggined
-        //WebElement userName = driver.findElement(By.xpath("//div[@class='profile-photo']"));
-        //WebElement userName = driver.findElement(By.xpath("//div//span"));
-        //WebElement userName = driver.findElement(By.cssSelector(".hidden"));
-        //WebElement userName = driver.findElement(By.xpath("//span[@class='hidden']"));
-        //Assert.assertEquals(userName.getText(), "Piter Chailovskii");
+        WebElement userName1 = driver.findElement(By.xpath("//*[@class='profile-photo']//span"));
+        Assert.assertEquals(userName1.getText(), "PITER CHAILOVSKII");
 
         //6 Assert Browser title
         Assert.assertEquals(driver.getTitle() , "Index Page");
@@ -71,28 +84,12 @@ public class SeleniumTest {
 
         //8 Assert that there are 4 texts on the Home Page and check them by getting texts
         List<WebElement> textBoxes = driver.findElements(By.cssSelector(".benefit-txt"));
+        String[] allTexts = {"To include good practices and ideas from successful EPAM projec",
+                "To be flexible and customizable", "To be multiplatform", "Already have " +
+                "good base (about 20 internal and some external projects), wish to get more…"};
         for (int i = 0; i < textBoxes.size(); i++) {
             Assert.assertTrue(textBoxes.get(i).isDisplayed());
-            switch (i) {
-                case 0:
-                    Assert.assertEquals(textBoxes.get(i).getText(), "To include good practices\n" +
-                            "and ideas from successful\n" +
-                            "EPAM projec");
-                    break;
-                case 1:
-                    Assert.assertEquals(textBoxes.get(i).getText(), "To be flexible and\n" +
-                            "customizable");
-                    break;
-                case 2:
-                    Assert.assertEquals(textBoxes.get(i).getText(), "To be multiplatform");
-                    break;
-                case 3:
-                    Assert.assertEquals(textBoxes.get(i).getText(), "Already have good base\n" +
-                            "(about 20 internal and\n" +
-                            "some external projects),\n" +
-                            "wish to get more…");
-                    break;
-            }
+            Assert.assertEquals(textBoxes.get(i).getText().replaceAll("\\n"," "), allTexts[i]);
         }
 
         //9 Assert that there are the main header and the text below it on the Home Page
@@ -101,7 +98,5 @@ public class SeleniumTest {
         WebElement textElement2 = driver.findElement(By.cssSelector(".main-txt"));
         Assert.assertTrue(textElement2.isDisplayed());
 
-        //10 Close Browser
-        driver.close();
     }
 }
