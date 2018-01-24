@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
 
 
 import static java.lang.System.setProperty;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class TestSmokeRegression {
 
@@ -32,15 +34,14 @@ public class TestSmokeRegression {
     @Test(groups = {"regression"})
     public void TestR() {
         WebElement textElement1 = driver.findElement(By.cssSelector(".main-title"));
-        Assert.assertTrue(textElement1.isDisplayed());
+        assertTrue(textElement1.isDisplayed());
         WebElement textElement2 = driver.findElement(By.cssSelector(".main-txt"));
-        Assert.assertTrue(textElement2.isDisplayed());
+        assertTrue(textElement2.isDisplayed());
 
     }
 
     @Test(groups = {"smoke"})
     public void TestS() {
-        Assert.assertEquals(driver.getTitle() , "Index Page");
+        assertEquals(driver.getTitle(), "Index Page");
     }
-
 }

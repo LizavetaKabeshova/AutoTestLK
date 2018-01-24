@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -12,6 +11,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static java.lang.System.setProperty;
+import static org.testng.Assert.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 
 public class TestRegression {
@@ -34,9 +35,9 @@ public class TestRegression {
     @Test(groups = {"regression"})
     public void testR() {
         List<WebElement> imgElements = driver.findElements(By.cssSelector(".icons-benefit"));
-        for (int i = 0; i < imgElements.size(); i++) {
-            Assert.assertTrue(imgElements.get(i).isDisplayed());
-            Assert.assertEquals(imgElements.get(i).getCssValue("background-image"),
+        for (WebElement imgElement : imgElements) {
+            assertTrue(imgElement.isDisplayed());
+            assertEquals(imgElement.getCssValue("background-image"),
                     "url(\"https://jdi-framework.github.io/tests/images/sprite.png\")");
         }
     }

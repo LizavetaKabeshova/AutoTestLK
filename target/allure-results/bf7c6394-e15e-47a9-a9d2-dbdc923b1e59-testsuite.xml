@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516755847484" stop="1516755860088" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1516755854929" stop="1516755858914" status="passed">
+            <name>loginTest</name>
+            <steps>
+                <step start="1516755854960" stop="1516755857499" status="passed">
+                    <name>open[ChromeDriver: chrome on XP (77d20302ad8811b6257ec347cf51ae2b)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755857501" stop="1516755858724" status="passed">
+                    <name>checkButtonServiceTop[[SUPPORT, DATES, COMPLEX TABLE, SIMPLE TABLE, TABLE WITH PAGES, DIFFERENT ELEMENTS]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755858724" stop="1516755858911" status="passed">
+                    <name>checkButtonServiceLeft[[SUPPORT, DATES, COMPLEX TABLE, SIMPLE TABLE, TABLE WITH PAGES, DIFFERENT ELEMENTS]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTest"/>
+                <label name="testMethod" value="loginTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6124@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

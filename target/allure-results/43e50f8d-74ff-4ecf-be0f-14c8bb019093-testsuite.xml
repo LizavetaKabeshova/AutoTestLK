@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516755570240" stop="1516755585066" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1516755578552" stop="1516755583945" status="passed">
+            <name>loginTest</name>
+            <steps>
+                <step start="1516755578580" stop="1516755581027" status="passed">
+                    <name>open[ChromeDriver: chrome on XP (3fe345c5de54898980e0abc0fe869af5)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755581075" stop="1516755581082" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755581083" stop="1516755581675" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755581676" stop="1516755581761" status="passed">
+                    <name>checkUserName[PITER CHAILOVSKII]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755581762" stop="1516755582050" status="passed">
+                    <name>checkImages</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755582051" stop="1516755582878" status="passed">
+                    <name>checkTexts[[To include good practices and ideas from successful EPAM projec, To be flexible and customizable, To be mult...]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755582878" stop="1516755583019" status="passed">
+                    <name>checkMainTitle[EPAM FRAMEWORK WISHES…]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755583020" stop="1516755583104" status="passed">
+                    <name>checkMainText[LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DO...]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516755583104" stop="1516755583945" status="passed">
+                    <name>checkButtonServiceTop[[SUPPORT, DATES, COMPLEX TABLE, SIMPLE TABLE, TABLE WITH PAGES, DIFFERENT ELEMENTS]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTest"/>
+                <label name="testMethod" value="loginTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6080@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
