@@ -34,19 +34,18 @@ public class SeleniumTest {
     }
 
     @Test
-    public void loginTest() {
+    public void mainPageTest() {
 
         // Assert Browser title
         assertEquals(driver.getTitle(), "Index Page");
 
-        //Perform login
-        //driver.findElement(By.xpath(("//*[@class='dropdown-toggle'][1]"))).click();
+        // Perform login
         driver.findElement(By.cssSelector(".uui-profile-menu .dropdown-toggle")).click();
         driver.findElement(By.xpath("//*[@id='Login']")).sendKeys("epam");
         driver.findElement(By.xpath("//*[@id='Password']")).sendKeys("1234");
         driver.findElement(By.xpath("//*[@class='form-horizontal']//button")).click();
 
-        //Assert User name in the left-top side of screen that user is loggined
+        // Assert User name in the left-top side of screen that user is loggined
         WebElement userName = driver.findElement(By.xpath("//*[@class='profile-photo']//span"));
         assertEquals(userName.getText(), "PITER CHAILOVSKII");
 
@@ -56,17 +55,17 @@ public class SeleniumTest {
             assertTrue(imgElement.isDisplayed());
         }
 
-        //Assert texts
+        // Assert texts
         List<WebElement> textBoxes = driver.findElements(By.xpath("//*[@class='benefit-txt']"));
-        String[] allTexts = {"To include good practices and ideas from successful EPAM projec",
-                "To be flexible and customizable", "To be multiplatform", "Already have " +
-                "good base (about 20 internal and some external projects), wish to get more…"};
-        for (int i = 0; i < textBoxes.size(); i++) {
-            assertTrue(textBoxes.get(i).isDisplayed());
-            assertEquals(textBoxes.get(i).getText().replaceAll("\\n", " "), allTexts[i]);
+        String allTexts = "To include good practices and ideas from successful EPAM projec" +
+                "To be flexible and customizable" + "To be multiplatform" + "Already have " +
+                "good base (about 20 internal and some external projects), wish to get more…";
+        for (WebElement textBoxe : textBoxes) {
+            assertTrue(textBoxe.isDisplayed());
+            assertTrue(allTexts.contains(textBoxe.getText().replaceAll("\\n", " ")));
         }
 
-        //Assert that there are the main header and the text below it on the Home Page
+        // Assert that there are the main header and the text below it on the Home Page
         assertTrue(driver.findElement(By.xpath("//*[@class='main-content']//h3")).isDisplayed());
         assertTrue(driver.findElement(By.xpath("//*[@class='main-content']//p")).isDisplayed());
     }

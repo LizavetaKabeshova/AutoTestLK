@@ -11,9 +11,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static java.lang.System.setProperty;
-import static org.testng.Assert.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
-
 
 public class TestRegression {
 
@@ -37,8 +35,6 @@ public class TestRegression {
         List<WebElement> imgElements = driver.findElements(By.cssSelector(".icons-benefit"));
         for (WebElement imgElement : imgElements) {
             assertTrue(imgElement.isDisplayed());
-            assertEquals(imgElement.getCssValue("background-image"),
-                    "url(\"https://jdi-framework.github.io/tests/images/sprite.png\")");
         }
     }
 }

@@ -10,9 +10,10 @@ import pageObjects.DifferentElementsPageSelenide;
 import pageObjects.IndexPageSelenide;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static enums.DifferentElementsPageEnum.*;
 import static enums.IndexPageEnum.*;
 
-public class SelenideTest extends BaseSelenide {
+public class SelenideTestCase1 extends BaseSelenide {
 
     private IndexPageSelenide indexPageSelenide;
     private DifferentElementsPageSelenide differentElementsPageSelenide;
@@ -20,6 +21,7 @@ public class SelenideTest extends BaseSelenide {
     @BeforeMethod
     public void setPage() {
         indexPageSelenide = Selenide.page(IndexPageSelenide.class);
+        differentElementsPageSelenide = Selenide.page(DifferentElementsPageSelenide.class);
     }
 
     @AfterMethod
@@ -28,11 +30,11 @@ public class SelenideTest extends BaseSelenide {
     }
 
     @Test
-    public void loginTest() {
+    public void differentElementsTest() {
 
         //Open test site by URL
         indexPageSelenide.open(getWebDriver());
-/*
+
         //Assert title
         indexPageSelenide.checkPageTitle(getWebDriver().getTitle());
 
@@ -43,11 +45,8 @@ public class SelenideTest extends BaseSelenide {
         indexPageSelenide.checkUserName(USER_NAME.text);
 
         //Check interface on Home page, it contains all needed elements.
-        indexPageSelenide.checkImages();
-        indexPageSelenide.checkTexts(getTexts());
-        indexPageSelenide.checkMainTitle(TEXT_TITLE.text);
-        indexPageSelenide.checkMainText(TEXT_CONTENT.text);
-*/
+        indexPageSelenide.checkInterfaceIndexPage(getTexts(), TEXT_TITLE.text, TEXT_CONTENT.text);
+
         //Click on "Service" subcategory in the header and check that drop down contains options
         indexPageSelenide.checkButtonServiceTop(getTextsServiceTop());
 
@@ -58,18 +57,24 @@ public class SelenideTest extends BaseSelenide {
         indexPageSelenide.openDifferentElementsPage(getWebDriver());
 
         //Check interface on Service page, it contains all needed elements.
-        //differentElementsPageSelenide.checkPageTitle(getWebDriver());
-        differentElementsPageSelenide.open(getWebDriver());
+        differentElementsPageSelenide.checkInterfaceDifferentElements();
 
-        //Select and assert checkboxes
-        //Select radio
-        //Select in dropdown
-        //Check in logs section selected values and status (true|false)
-        //Unselect and assert checkboxes
+        //Select and assert checkboxes Water, Wind
+        differentElementsPageSelenide.selectCheckBoxes(WATER, WIND);
+
+        //Select radio Selen
+        differentElementsPageSelenide.selectRadio(SELEN);
+
+        //Select in dropdown Yellow
+        differentElementsPageSelenide.selectDropDown(YELLOW.text);
+
+        //Check in logs section selected values and status (true|false) Water, Wind, Selen, Yellow
+        differentElementsPageSelenide.checkLogs(1, WATER, WIND, SELEN, YELLOW);
+
+        //Unselect and assert checkboxes Water, Wind
+        differentElementsPageSelenide.unselectCheckBoxes(WATER, WIND);
+
         //Check in logs section unselected values and status (true|false)
-
+        differentElementsPageSelenide.checkLogs(0, WATER, WIND);
     }
-
-
-
 }

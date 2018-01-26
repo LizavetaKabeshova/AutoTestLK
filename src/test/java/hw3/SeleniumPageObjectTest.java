@@ -28,28 +28,28 @@ public class SeleniumPageObjectTest {
     }
 
     @Test
-    public void mainTest() {
+    public void mainPageTest() {
 
-        //Open test site by URL
+        // Open test site by URL
         driver.navigate().to("https://jdi-framework.github.io/tests/index.htm");
 
         // Assert Browser title
         indexPage.checkTitle(driver);
 
-        //Perform login
+        // Perform login
         indexPage.login("epam", "1234");
 
-        //Assert User name in the left-top side of screen that user is loggined
+        // Assert User name in the left-top side of screen that user is loggined
         indexPage.checkUser(USER_NAME.text);
 
         // Assert images
         String urlIcons = "url(\"https://jdi-framework.github.io/tests/images/sprite.png\")";
         indexPage.checkIcons(urlIcons);
 
-        //Assert texts
+        // Assert texts
         indexPage.checkTexts(getTexts());
 
-        //Assert that there are the main header and the text below it on the Home Page
+        // Assert that there are the main header and the text below it on the Home Page
         indexPage.checkMainTitle(TEXT_TITLE.text);
         indexPage.checkMainText(TEXT_CONTENT.text);
     }

@@ -16,12 +16,6 @@ import static org.testng.Assert.assertEquals;
 
 public class DPTest {
 
-    /*
-    1.	Develop a dedicated test for asserting 4 texts below 4 pictures on the Index Page
-    - https://jdi-framework.github.io/tests/index.htm. The test must be developed with help of the DataProvider.
-    Run it in the parallel by methods through the configuring parameters in a @DataProvider annotation.
-     */
-
     private WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)

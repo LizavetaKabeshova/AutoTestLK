@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516922449174" stop="1516922465958" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1516922457128" stop="1516922464913" status="passed">
+            <name>differentElementsTest</name>
+            <steps>
+                <step start="1516922457163" stop="1516922459344" status="passed">
+                    <name>open[ChromeDriver: chrome on XP (1708f8d2ed61853a861a11fe705e19a3)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922459358" stop="1516922459364" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922459365" stop="1516922459831" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922459832" stop="1516922460863" status="passed">
+                    <name>openDifferentElementsPage[ChromeDriver: chrome on XP (1708f8d2ed61853a861a11fe705e19a3)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922460866" stop="1516922461657" status="passed">
+                    <name>checkInterfaceDifferentElements</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922461658" stop="1516922462707" status="passed">
+                    <name>selectCheckBoxes[[WATER, WIND]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922462708" stop="1516922463250" status="passed">
+                    <name>selectRadio[[SELEN]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922463251" stop="1516922463624" status="passed">
+                    <name>selectDropDown[Yellow]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516922463625" stop="1516922463809" status="passed">
+                    <name>checkLogsData[[WATER, WIND, SELEN, YELLOW]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTest"/>
+                <label name="testMethod" value="differentElementsTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="5876@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

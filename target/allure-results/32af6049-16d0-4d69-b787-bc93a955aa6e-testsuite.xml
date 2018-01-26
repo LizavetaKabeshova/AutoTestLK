@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516913878871" stop="1516913894642" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1516913886870" stop="1516913893518" status="passed">
+            <name>differentElementsTest</name>
+            <steps>
+                <step start="1516913886899" stop="1516913889355" status="passed">
+                    <name>open[ChromeDriver: chrome on XP (ad278c8a28a7b29b783e188e1b32070d)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913889370" stop="1516913889387" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913889388" stop="1516913889854" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913889856" stop="1516913889938" status="passed">
+                    <name>checkUserName[PITER CHAILOVSKII]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913889939" stop="1516913890817" status="passed">
+                    <name>checkInterface[[To include good practices and ideas from successful EPAM projec, To be flexible and customizable, To be ...]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913890818" stop="1516913891724" status="passed">
+                    <name>checkButtonServiceTop[[SUPPORT, DATES, COMPLEX TABLE, SIMPLE TABLE, TABLE WITH PAGES, DIFFERENT ELEMENTS]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913891725" stop="1516913891937" status="passed">
+                    <name>checkButtonServiceLeft[[SUPPORT, DATES, COMPLEX TABLE, SIMPLE TABLE, TABLE WITH PAGES, DIFFERENT ELEMENTS]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913891938" stop="1516913892760" status="passed">
+                    <name>openDifferentElementsPage[ChromeDriver: chrome on XP (ad278c8a28a7b29b783e188e1b32070d)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516913892761" stop="1516913893516" status="passed">
+                    <name>checkAllElements</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTest"/>
+                <label name="testMethod" value="differentElementsTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="7304@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

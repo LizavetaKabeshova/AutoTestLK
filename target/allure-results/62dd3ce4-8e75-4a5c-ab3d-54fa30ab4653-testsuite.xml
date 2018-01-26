@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516924594613" stop="1516924612781" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1516924602509" stop="1516924611736" status="passed">
+            <name>differentElementsTest</name>
+            <steps>
+                <step start="1516924602551" stop="1516924604048" status="passed">
+                    <name>open[ChromeDriver: chrome on XP (2a0fe95b18477348bb213e8ae53013d3)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924604102" stop="1516924604108" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924604109" stop="1516924604695" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924604696" stop="1516924604784" status="passed">
+                    <name>checkUserName[PITER CHAILOVSKII]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924604785" stop="1516924605714" status="passed">
+                    <name>checkInterfaceIndexPage[[To include good practices and ideas from successful EPAM projec, To be flexible and customizabl...]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924605715" stop="1516924606693" status="passed">
+                    <name>checkButtonServiceTop[[SUPPORT, DATES, COMPLEX TABLE, SIMPLE TABLE, TABLE WITH PAGES, DIFFERENT ELEMENTS]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924606694" stop="1516924606907" status="passed">
+                    <name>checkButtonServiceLeft[[SUPPORT, DATES, COMPLEX TABLE, SIMPLE TABLE, TABLE WITH PAGES, DIFFERENT ELEMENTS]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924606908" stop="1516924607727" status="passed">
+                    <name>openDifferentElementsPage[ChromeDriver: chrome on XP (2a0fe95b18477348bb213e8ae53013d3)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924607729" stop="1516924608581" status="passed">
+                    <name>checkInterfaceDifferentElements</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924608582" stop="1516924609695" status="passed">
+                    <name>selectCheckBoxes[[WATER, WIND]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924609696" stop="1516924610196" status="passed">
+                    <name>selectRadio[[SELEN]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924610197" stop="1516924610566" status="passed">
+                    <name>selectDropDown[Yellow]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924610568" stop="1516924610820" status="passed">
+                    <name>checkLogs[1, [WATER, WIND, SELEN, YELLOW]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924610821" stop="1516924611617" status="passed">
+                    <name>unselectCheckBoxes[[WATER, WIND]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516924611617" stop="1516924611733" status="passed">
+                    <name>checkLogs[0, [WATER, WIND]]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTest"/>
+                <label name="testMethod" value="differentElementsTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="4672@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

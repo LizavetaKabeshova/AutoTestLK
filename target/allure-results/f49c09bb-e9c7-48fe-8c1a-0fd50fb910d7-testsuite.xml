@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516924112014" stop="1516924130971" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1516924121218" stop="1516924129764" status="failed">
+            <name>differentElementsTest</name>
+            <failure>
+                <message>AssertionError: expected [0] but found [1]</message>
+                <stack-trace>java.lang.AssertionError: expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at pageObjects.DifferentElementsPageSelenide.checkLogs(DifferentElementsPageSelenide.java:106)
+	at hw4.SelenideTest.differentElementsTest(SelenideTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1516924121245" stop="1516924124183" status="passed">
+                    <name>open[ChromeDriver: chrome on XP (d05ad9fe39810a314e7ccda3b392e816)]</name>
+                </step>
+                <step start="1516924124205" stop="1516924124214" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                </step>
+                <step start="1516924124216" stop="1516924124752" status="passed">
+                    <name>login[epam, 1234]</name>
+                </step>
+                <step start="1516924124753" stop="1516924125735" status="passed">
+                    <name>openDifferentElementsPage[ChromeDriver: chrome on XP (d05ad9fe39810a314e7ccda3b392e816)]</name>
+                </step>
+                <step start="1516924125736" stop="1516924126524" status="passed">
+                    <name>checkInterfaceDifferentElements</name>
+                </step>
+                <step start="1516924126525" stop="1516924127597" status="passed">
+                    <name>selectCheckBoxes[[WATER, WIND]]</name>
+                </step>
+                <step start="1516924127598" stop="1516924128079" status="passed">
+                    <name>selectRadio[[SELEN]]</name>
+                </step>
+                <step start="1516924128080" stop="1516924128450" status="passed">
+                    <name>selectDropDown[Yellow]</name>
+                </step>
+                <step start="1516924128452" stop="1516924128767" status="passed">
+                    <name>checkLogs[1, [WATER, WIND, SELEN, YELLOW]]</name>
+                </step>
+                <step start="1516924129606" stop="1516924129756" status="failed">
+                    <name>checkLogs[0, [WATER, WIND]]</name>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTest"/>
+                <label name="testMethod" value="differentElementsTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6864@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

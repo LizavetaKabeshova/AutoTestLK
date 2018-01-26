@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516921257817" stop="1516921271901" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1516921265272" stop="1516921270827" status="passed">
+            <name>differentElementsTest</name>
+            <steps>
+                <step start="1516921265310" stop="1516921266655" status="passed">
+                    <name>open[ChromeDriver: chrome on XP (37d0d83edc907b8276773d6f725895a7)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516921266677" stop="1516921266684" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516921266685" stop="1516921267351" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516921267352" stop="1516921268162" status="passed">
+                    <name>openDifferentElementsPage[ChromeDriver: chrome on XP (37d0d83edc907b8276773d6f725895a7)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516921268163" stop="1516921269018" status="passed">
+                    <name>checkInterfaceDifferentElements</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516921269019" stop="1516921270126" status="passed">
+                    <name>selectCheckBoxes[[WATER, WIND]]</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1516921269020" stop="1516921269218" status="passed">
+                            <name>selectCheckBox[WATER]</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516921269321" stop="1516921269526" status="passed">
+                            <name>selectCheckBox[WATER]</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516921269598" stop="1516921269810" status="passed">
+                            <name>selectCheckBox[WIND]</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516921269920" stop="1516921270076" status="passed">
+                            <name>selectCheckBox[WIND]</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516921270127" stop="1516921270416" status="passed">
+                    <name>selectRadio[Selen]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516921270417" stop="1516921270824" status="passed">
+                    <name>selectDropDown[Yellow]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516921270824" stop="1516921270824" status="passed">
+                    <name>checkLogsData[Water, Wind, Selen, Yellow]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTest"/>
+                <label name="testMethod" value="differentElementsTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="9884@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
