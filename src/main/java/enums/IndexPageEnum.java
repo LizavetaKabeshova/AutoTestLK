@@ -5,10 +5,6 @@ import java.util.List;
 
 public enum IndexPageEnum {
 
-    TEXT_1("To include good practices and ideas from successful EPAM projec"),
-    TEXT_2("To be flexible and customizable"),
-    TEXT_3("To be multiplatform"),
-    TEXT_4("Already have good base (about 20 internal and some external projects), wish to get more…"),
     TITLE("Index Page"),
     USER_NAME("PITER CHAILOVSKII"),
     TEXT_TITLE("EPAM FRAMEWORK WISHES…"),
@@ -28,15 +24,6 @@ public enum IndexPageEnum {
 
     IndexPageEnum(String text) {
         this.text = text;
-    }
-
-    public static List<String> getTexts() {
-        texts = new ArrayList<String>();
-        texts.add(TEXT_1.text);
-        texts.add(TEXT_2.text);
-        texts.add(TEXT_3.text);
-        texts.add(TEXT_4.text);
-        return texts;
     }
 
     public static List<String> getTextsServiceTop() {

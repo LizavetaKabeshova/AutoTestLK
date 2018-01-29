@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517168472298" stop="1517168529004" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Smoke tests : Group test 1</name>
+    <title>Smoke tests : Group test 1</title>
+    <test-cases>
+        <test-case start="1517168482292" stop="1517168482571" status="passed">
+            <name>TestS</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Group test 1"/>
+                <label name="testClass" value="hw2.ex2.TestSmoke"/>
+                <label name="testMethod" value="TestS"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6308@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1517168493133" stop="1517168493267" status="passed">
+            <name>TestS2</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Group test 1"/>
+                <label name="testClass" value="hw2.ex2.TestSmoke"/>
+                <label name="testMethod" value="TestS2"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6308@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1517168503609" stop="1517168503757" status="passed">
+            <name>TestS3</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Group test 1"/>
+                <label name="testClass" value="hw2.ex2.TestSmoke"/>
+                <label name="testMethod" value="TestS3"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6308@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1517168514012" stop="1517168514065" status="passed">
+            <name>TestS</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Group test 1"/>
+                <label name="testClass" value="hw2.ex2.TestSmokeRegression"/>
+                <label name="testMethod" value="TestS"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6308@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1517168526553" stop="1517168526590" status="passed">
+            <name>TestS2</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Group test 1"/>
+                <label name="testClass" value="hw2.ex2.TestSmokeRegression"/>
+                <label name="testMethod" value="TestS2"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="6308@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517181802784" stop="1517181820405" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1517181811794" stop="1517181819276" status="passed">
+            <name>slidersTest</name>
+            <steps>
+                <step start="1517181811832" stop="1517181814233" status="passed">
+                    <name>open</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181814269" stop="1517181814276" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181814277" stop="1517181815026" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181815027" stop="1517181815124" status="passed">
+                    <name>checkUserName[PITER CHAILOVSKII]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181815126" stop="1517181816252" status="passed">
+                    <name>openDatesPage[ChromeDriver: chrome on XP (5cd338462198aab59f777baa54042819)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181816254" stop="1517181817066" status="passed">
+                    <name>setSliders[0, 100]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181817067" stop="1517181817720" status="passed">
+                    <name>setSliders[0, 0]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181817721" stop="1517181818515" status="passed">
+                    <name>setSliders[100, 100]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517181818516" stop="1517181819273" status="passed">
+                    <name>setSliders[30, 70]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTestCase2"/>
+                <label name="testMethod" value="slidersTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="11916@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

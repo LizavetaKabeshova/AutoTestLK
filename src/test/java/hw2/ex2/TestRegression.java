@@ -37,4 +37,20 @@ public class TestRegression {
             assertTrue(imgElement.isDisplayed());
         }
     }
+
+    @Test(groups = {"regression"})
+    public void testR2() {
+        List<WebElement> imgElements = driver.findElements(By.cssSelector(".icons-benefit"));
+        for (WebElement imgElement : imgElements) {
+            assertTrue(imgElement.isDisplayed());
+        }
+    }
+
+    @Test(groups = {"regression"})
+    public void testR3() {
+        List<WebElement> imgElements = driver.findElements(By.cssSelector(".icons-benefit"));
+        for (WebElement imgElement : imgElements) {
+            assertTrue(imgElement.isDisplayed());
+        }
+    }
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517176930575" stop="1517176944074" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1517176938194" stop="1517176942989" status="passed">
+            <name>slidersTest</name>
+            <steps>
+                <step start="1517176938223" stop="1517176940794" status="passed">
+                    <name>open</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176940817" stop="1517176940823" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176940824" stop="1517176941355" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176941357" stop="1517176941455" status="passed">
+                    <name>checkUserName[PITER CHAILOVSKII]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176941456" stop="1517176942299" status="passed">
+                    <name>openDatesPage[ChromeDriver: chrome on XP (9c2d85da573c39a8124a5faaafad1024)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176942301" stop="1517176942986" status="passed">
+                    <name>setSliders[0, 100, ChromeDriver: chrome on XP (9c2d85da573c39a8124a5faaafad1024)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTestCase2"/>
+                <label name="testMethod" value="slidersTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="5432@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

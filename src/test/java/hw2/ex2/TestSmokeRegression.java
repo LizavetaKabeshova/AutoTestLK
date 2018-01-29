@@ -34,8 +34,19 @@ public class TestSmokeRegression {
         assertTrue(driver.findElement(By.cssSelector(".main-txt")).isDisplayed());
     }
 
+    @Test(groups = {"regression"})
+    public void TestR2() {
+        assertTrue(driver.findElement(By.cssSelector(".main-title")).isDisplayed());
+        assertTrue(driver.findElement(By.cssSelector(".main-txt")).isDisplayed());
+    }
+
     @Test(groups = {"smoke"})
     public void TestS() {
+        assertEquals(driver.getTitle(), "Index Page");
+    }
+
+    @Test(groups = {"smoke"})
+    public void TestS2() {
         assertEquals(driver.getTitle(), "Index Page");
     }
 }

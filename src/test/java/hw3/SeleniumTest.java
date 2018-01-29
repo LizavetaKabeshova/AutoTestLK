@@ -18,7 +18,6 @@ public class SeleniumTest {
 
     private WebDriver driver;
 
-    //Open test site by URL
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
         setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -27,7 +26,6 @@ public class SeleniumTest {
         driver.navigate().to("https://jdi-framework.github.io/tests");
     }
 
-    // Close
     @AfterMethod(alwaysRun = true)
     public void turnOff() {
         driver.close();
@@ -36,26 +34,27 @@ public class SeleniumTest {
     @Test
     public void mainPageTest() {
 
-        // Assert Browser title
+        // Change search on "xpath"
+        // 3 Assert Browser title
         assertEquals(driver.getTitle(), "Index Page");
 
-        // Perform login
+        // 4 Perform login
         driver.findElement(By.cssSelector(".uui-profile-menu .dropdown-toggle")).click();
         driver.findElement(By.xpath("//*[@id='Login']")).sendKeys("epam");
         driver.findElement(By.xpath("//*[@id='Password']")).sendKeys("1234");
         driver.findElement(By.xpath("//*[@class='form-horizontal']//button")).click();
 
-        // Assert User name in the left-top side of screen that user is loggined
+        // 5 Assert User name in the left-top side of screen that user is loggined
         WebElement userName = driver.findElement(By.xpath("//*[@class='profile-photo']//span"));
         assertEquals(userName.getText(), "PITER CHAILOVSKII");
 
-        // Assert images
+        // 6 Assert images
         List<WebElement> imgElements = driver.findElements(By.xpath("//*[@class='benefit-icon']"));
         for (WebElement imgElement : imgElements) {
             assertTrue(imgElement.isDisplayed());
         }
 
-        // Assert texts
+        // 7 Assert texts
         List<WebElement> textBoxes = driver.findElements(By.xpath("//*[@class='benefit-txt']"));
         String allTexts = "To include good practices and ideas from successful EPAM projec" +
                 "To be flexible and customizable" + "To be multiplatform" + "Already have " +
@@ -65,7 +64,7 @@ public class SeleniumTest {
             assertTrue(allTexts.contains(textBoxe.getText().replaceAll("\\n", " ")));
         }
 
-        // Assert that there are the main header and the text below it on the Home Page
+        // 8 Assert that there are the main header and the text below it on the Home Page
         assertTrue(driver.findElement(By.xpath("//*[@class='main-content']//h3")).isDisplayed());
         assertTrue(driver.findElement(By.xpath("//*[@class='main-content']//p")).isDisplayed());
     }

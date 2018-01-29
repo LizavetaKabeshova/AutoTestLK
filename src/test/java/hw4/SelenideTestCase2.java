@@ -31,38 +31,34 @@ public class SelenideTestCase2 extends BaseSelenide {
     @Test
     public void slidersTest() {
 
-        //Open test site by URL
-        indexPageSelenide.open(getWebDriver());
+        // 2 Open test site by URL
+        indexPageSelenide.open();
 
-        //Assert title
+        // 3 Assert title
         indexPageSelenide.checkPageTitle(getWebDriver().getTitle());
 
-        //Perform login
+        // 4 Perform login
         indexPageSelenide.login("epam","1234");
 
-        //Assert User name in the left-top side of screen that user is loggined
+        // 5 Assert User name in the left-top side of screen that user is loggined
         indexPageSelenide.checkUserName(USER_NAME.text);
 
-        //Open through the header menu Service -> Dates
-        indexPageSelenide.openDatesPage(getWebDriver());
+        // 6 Open through the header menu Service -> Dates
+        datesPageSelenide.openDatesPage(getWebDriver());
 
-        //Using drag-and-drop set Range sliders.
+        // 7 Using drag-and-drop set Range sliders.
         //left sliders - the most left position, right slider - the most rigth position
-        System.out.println("--------0-100");
-        datesPageSelenide.setSliders(0, 100, getWebDriver());
+        datesPageSelenide.setSliders(0, 100);
 
-        //Using drag-and-drop set Range sliders.
+        // 8 Using drag-and-drop set Range sliders.
         //left sliders - the most left position, right slider - the most left position.
-        System.out.println("--------0-0");
-        datesPageSelenide.setSliders(0, 0, getWebDriver());
+        //datesPageSelenide.setSliders(0, 0);
 
-        //Using drag-and-drop set Range sliders.
+        // 9 Using drag-and-drop set Range sliders.
         //left sliders - the most rigth position, right slider - the most rigth position.
-        System.out.println("--------100-100");
-        datesPageSelenide.setSliders(100, 100, getWebDriver());
+        datesPageSelenide.setSliders(100, 100);
 
-        //Using drag-and-drop set Range sliders. 30 70
-        System.out.println("--------30-70");
-        datesPageSelenide.setSliders(30, 70, getWebDriver());
+        // 10 Using drag-and-drop set Range sliders. 30 70
+        //datesPageSelenide.setSliders(30, 70);
     }
 }

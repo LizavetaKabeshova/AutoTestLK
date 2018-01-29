@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static java.lang.System.setProperty;
-import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class DPTest {
 
@@ -44,6 +44,6 @@ public class DPTest {
     @Test(dataProvider = "dp")
     public void dpTest(int w, String s) {
         List<WebElement> textBoxes = driver.findElements(By.cssSelector(".benefit-txt"));
-        assertEquals(textBoxes.get(w).getText().replaceAll("\\n", " "), s);
+        assertTrue(textBoxes.get(w).getText().replaceAll("\\n", " ").contains(s));
     }
 }

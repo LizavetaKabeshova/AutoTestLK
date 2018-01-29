@@ -37,4 +37,20 @@ public class TestSmoke {
             assertTrue(textBoxe.isDisplayed());
         }
     }
+
+    @Test(groups = {"smoke"})
+    public void TestS2() {
+        List<WebElement> textBoxes = driver.findElements(By.cssSelector(".benefit-txt"));
+        for (WebElement textBoxe : textBoxes) {
+            assertTrue(textBoxe.isDisplayed());
+        }
+    }
+
+    @Test(groups = {"smoke"})
+    public void TestS3() {
+        List<WebElement> textBoxes = driver.findElements(By.cssSelector(".benefit-txt"));
+        for (WebElement textBoxe : textBoxes) {
+            assertTrue(textBoxe.isDisplayed());
+        }
+    }
 }

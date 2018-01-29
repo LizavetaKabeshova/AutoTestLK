@@ -32,49 +32,49 @@ public class SelenideTestCase1 extends BaseSelenide {
     @Test
     public void differentElementsTest() {
 
-        //Open test site by URL
-        indexPageSelenide.open(getWebDriver());
+        // 2 Open test site by URL
+        indexPageSelenide.open();
 
-        //Assert title
+        // 3 Assert title
         indexPageSelenide.checkPageTitle(getWebDriver().getTitle());
 
-        //Perform login
+        // 4 Perform login
         indexPageSelenide.login("epam","1234");
 
-        //Assert User name in the left-top side of screen that user is loggined
+        // 5 Assert User name in the left-top side of screen that user is loggined
         indexPageSelenide.checkUserName(USER_NAME.text);
 
-        //Check interface on Home page, it contains all needed elements.
-        indexPageSelenide.checkInterfaceIndexPage(getTexts(), TEXT_TITLE.text, TEXT_CONTENT.text);
+        // 6 Check interface on Home page, it contains all needed elements.
+        indexPageSelenide.checkInterfaceIndexPage();
 
-        //Click on "Service" subcategory in the header and check that drop down contains options
+        // 7 Click on "Service" subcategory in the header and check that drop down contains options
         indexPageSelenide.checkButtonServiceTop(getTextsServiceTop());
 
-        //Click on Service subcategory in the left section and check that drop down contains options
+        // 8 Click on Service subcategory in the left section and check that drop down contains options
         indexPageSelenide.checkButtonServiceLeft(getTextsServiceTop());
 
-        //Open through the header menu Service -> Different Elements Page
-        indexPageSelenide.openDifferentElementsPage(getWebDriver());
+        // 9 Open through the header menu Service -> Different Elements Page
+        differentElementsPageSelenide.openDifferentElementsPage(getWebDriver());
 
-        //Check interface on Service page, it contains all needed elements.
+        // 10 Check interface on Service page, it contains all needed elements.
         differentElementsPageSelenide.checkInterfaceDifferentElements();
 
-        //Select and assert checkboxes Water, Wind
+        // 11 Select and assert checkboxes Water, Wind
         differentElementsPageSelenide.selectCheckBoxes(WATER, WIND);
 
-        //Select radio Selen
+        // 12 Select radio Selen
         differentElementsPageSelenide.selectRadio(SELEN);
 
-        //Select in dropdown Yellow
+        // 13 Select in dropdown Yellow
         differentElementsPageSelenide.selectDropDown(YELLOW.text);
 
-        //Check in logs section selected values and status (true|false) Water, Wind, Selen, Yellow
+        // 14 Check in logs section selected values and status (true|false) Water, Wind, Selen, Yellow
         differentElementsPageSelenide.checkLogs(1, WATER, WIND, SELEN, YELLOW);
 
-        //Unselect and assert checkboxes Water, Wind
+        // 15 Unselect and assert checkboxes Water, Wind
         differentElementsPageSelenide.unselectCheckBoxes(WATER, WIND);
 
-        //Check in logs section unselected values and status (true|false)
+        // 16 Check in logs section unselected values and status (true|false)
         differentElementsPageSelenide.checkLogs(0, WATER, WIND);
     }
 }

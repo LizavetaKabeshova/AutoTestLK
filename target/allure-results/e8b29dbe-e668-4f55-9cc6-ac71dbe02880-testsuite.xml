@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517176428969" stop="1517176449327" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1517176439973" stop="1517176447957" status="passed">
+            <name>slidersTest</name>
+            <steps>
+                <step start="1517176440000" stop="1517176444357" status="passed">
+                    <name>open</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176444418" stop="1517176444428" status="passed">
+                    <name>checkPageTitle[Index Page]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176444429" stop="1517176445151" status="passed">
+                    <name>login[epam, 1234]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176445152" stop="1517176445239" status="passed">
+                    <name>checkUserName[PITER CHAILOVSKII]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176445240" stop="1517176446738" status="passed">
+                    <name>openDatesPage[ChromeDriver: chrome on XP (9691f96d8fd25d486203c2bf566c7c2b)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176446740" stop="1517176447247" status="passed">
+                    <name>setSliders[0, 100, ChromeDriver: chrome on XP (9691f96d8fd25d486203c2bf566c7c2b)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176447249" stop="1517176447485" status="passed">
+                    <name>setSliders[0, 0, ChromeDriver: chrome on XP (9691f96d8fd25d486203c2bf566c7c2b)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176447486" stop="1517176447722" status="passed">
+                    <name>setSliders[100, 100, ChromeDriver: chrome on XP (9691f96d8fd25d486203c2bf566c7c2b)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517176447723" stop="1517176447955" status="passed">
+                    <name>setSliders[30, 70, ChromeDriver: chrome on XP (9691f96d8fd25d486203c2bf566c7c2b)]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw4.SelenideTestCase2"/>
+                <label name="testMethod" value="slidersTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="9908@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

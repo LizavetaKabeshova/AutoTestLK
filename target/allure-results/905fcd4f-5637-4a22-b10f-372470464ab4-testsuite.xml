@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517169773000" stop="1517169805017" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Smoke tests : Smoke test 1</name>
+    <title>Smoke tests : Smoke test 1</title>
+    <test-cases>
+        <test-case start="1517169780065" stop="1517169780140" status="passed">
+            <name>dpTest[0,To include good practices and ideas from successful EPAM projec]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Smoke test 1"/>
+                <label name="testClass" value="hw2.DPTest"/>
+                <label name="testMethod" value="dpTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="8616@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1517169785376" stop="1517169785449" status="passed">
+            <name>dpTest[1,To be flexible and customizable]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Smoke test 1"/>
+                <label name="testClass" value="hw2.DPTest"/>
+                <label name="testMethod" value="dpTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="8616@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1517169795099" stop="1517169795158" status="passed">
+            <name>dpTest[2,To be multiplatform]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Smoke test 1"/>
+                <label name="testClass" value="hw2.DPTest"/>
+                <label name="testMethod" value="dpTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="8616@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1517169802430" stop="1517169802515" status="passed">
+            <name>dpTest[3,Already have good base (about 20 internal and some external projects), wish to get more…]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Smoke tests"/>
+                <label name="testGroup" value="Smoke test 1"/>
+                <label name="testClass" value="hw2.DPTest"/>
+                <label name="testMethod" value="dpTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="8616@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

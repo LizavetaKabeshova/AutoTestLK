@@ -15,9 +15,6 @@ import static java.lang.System.setProperty;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-// 1 Create a new test in a new Java class, specify test name in
-// accordance with checking functionality
-
 public class SeleniumTest {
 
     private WebDriver driver;
@@ -28,11 +25,9 @@ public class SeleniumTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        // 2 Open test site by URL
         driver.navigate().to("https://jdi-framework.github.io/tests");
     }
 
-    // 10 close driver
     @AfterMethod(alwaysRun = true)
     public void turnOff() {
         driver.close();

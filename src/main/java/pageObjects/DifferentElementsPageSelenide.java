@@ -3,6 +3,7 @@ package pageObjects;
 import com.codeborne.selenide.SelenideElement;
 import enums.DifferentElementsPageEnum;
 import org.apache.commons.lang3.StringUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
 
@@ -37,6 +38,12 @@ public class DifferentElementsPageSelenide {
     @FindBy(css = "ul.panel-body-list.logs")
     private SelenideElement logs;
 
+    @FindBy(css = ".dropdown-toggle")
+    private SelenideElement buttonServiceTop;
+
+    @FindBy(css = "[href='page8.htm']")
+    private SelenideElement buttonDifferentElementsPage;
+
     private SelenideElement elementName;
 
     @Step
@@ -47,6 +54,13 @@ public class DifferentElementsPageSelenide {
         IntStream.range(0, 2).forEach(i -> buttons.get(i).should(exist));
         leftSection.should(exist);
         rightSection.should(exist);
+    }
+
+    @Step
+    public void openDifferentElementsPage(WebDriver driver) {
+        buttonServiceTop.click();
+        buttonDifferentElementsPage.click();
+        assertEquals(driver.getCurrentUrl(), "https://jdi-framework.github.io/tests/page8.htm");
     }
 
     private SelenideElement selectCheckBox(DifferentElementsPageEnum elementEnum) {

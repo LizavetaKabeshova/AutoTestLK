@@ -6,10 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.List;
+import java.util.stream.IntStream;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static enums.IndexPageEnum.TITLE;
 import static org.testng.Assert.assertEquals;
 
@@ -54,15 +56,9 @@ public class IndexPageSelenide {
     @FindBy(css = ".sub-menu>li")
     private List<SelenideElement> elementsServiceLeft;
 
-    @FindBy(css = "[href='page8.htm']")
-    private SelenideElement buttonDifferentElementsPage;
-
-    @FindBy(css = "[href='page4.htm']")
-    private SelenideElement buttonDatesPage;
-
     @Step
-    public void open(WebDriver driver) {
-        driver.navigate().to("https://jdi-framework.github.io/tests/index.htm");
+    public void open() {
+        getWebDriver().navigate().to("https://jdi-framework.github.io/tests/index.htm");
     }
 
     @Step
@@ -89,44 +85,25 @@ public class IndexPageSelenide {
     public void checkButtonServiceTop(List<String> texts) {
         buttonServiceTop.click();
         elementsServiceTop.forEach((list -> list.should(exist)));
-        for (int i = 0; i < elementsServiceTop.size(); i++) {
-            assertEquals(elementsServiceTop.get(i).getText().replaceAll("\\n", " "), texts.get(i));
-        }
+        IntStream.range(0, elementsServiceTop.size())
+                .forEach(i -> assertEquals(elementsServiceTop.get(i).getText().replaceAll("\\n", " "),
+                        texts.get(i)));
     }
 
     @Step
     public void checkButtonServiceLeft(List<String> texts) {
         buttonServiceLeft.click();
         elementsServiceLeft.forEach((list -> list.should(exist)));
-        for (int i = 0; i < elementsServiceLeft.size(); i++) {
-            assertEquals(elementsServiceLeft.get(i).getText().replaceAll("\\n", " "), texts.get(i));
-        }
+        IntStream.range(0, elementsServiceLeft.size())
+                .forEach(i -> assertEquals(elementsServiceLeft.get(i).getText().replaceAll("\\n", " "),
+                        texts.get(i)));
     }
 
     @Step
-    public void openDifferentElementsPage(WebDriver driver) {
-        buttonServiceTop.click();
-        buttonDifferentElementsPage.click();
-        assertEquals(driver.getCurrentUrl(), "https://jdi-framework.github.io/tests/page8.htm");
-    }
-
-    @Step
-    public void checkInterfaceIndexPage(List<String> texts, String text, String text1) {
+    public void checkInterfaceIndexPage() {
         imgElements.forEach((list -> list.should(exist)));
         textBoxes.forEach((list -> list.should(exist)));
-        for (int i = 0; i < textBoxes.size(); i++) {
-            assertEquals(textBoxes.get(i).getText().replaceAll("\\n", " "), texts.get(i));
-        }
         mainTitle.should(exist);
-        mainTitle.shouldHave(text(text));
         mainTitle.should(exist);
-        mainText.shouldHave(text(text1));
-    }
-
-    @Step
-    public void openDatesPage(WebDriver driver) {
-        buttonServiceTop.click();
-        buttonDatesPage.click();
-        assertEquals(driver.getCurrentUrl(), "https://jdi-framework.github.io/tests/page4.htm");
     }
 }
