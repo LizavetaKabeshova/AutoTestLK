@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517346425840" stop="1517346435455" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1517346425980" stop="1517346435449" status="passed">
+            <name>loginTest</name>
+            <steps>
+                <step start="1517346433978" stop="1517346434696" status="passed">
+                    <name>login</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1517346434157" stop="1517346434696" status="passed">
+                            <name>loginAs[User{name:epam;password:1234}]</name>
+                            <attachments/>
+                            <steps>
+                                <step start="1517346434158" stop="1517346434696" status="passed">
+                                    <name>login[User{name:epam;password:1234}]</name>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1517346434703" stop="1517346434719" status="passed">
+                    <name>check</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517346434721" stop="1517346434729" status="passed">
+                    <name>check</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517346434729" stop="1517346434729" status="passed">
+                    <name>Check that condition 'true' is True</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw7.JDITest"/>
+                <label name="testMethod" value="loginTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="3492@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

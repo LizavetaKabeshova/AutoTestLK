@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517347675762" stop="1517347683932" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : AutoTestLK</name>
+    <title>Default Suite : AutoTestLK</title>
+    <test-cases>
+        <test-case start="1517347675855" stop="1517347683925" status="passed">
+            <name>loginTest</name>
+            <steps>
+                <step start="1517347682112" stop="1517347683037" status="passed">
+                    <name>login</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1517347682337" stop="1517347683037" status="passed">
+                            <name>loginAs[User{name:epam;password:1234}]</name>
+                            <attachments/>
+                            <steps>
+                                <step start="1517347682338" stop="1517347683037" status="passed">
+                                    <name>login[User{name:epam;password:1234}]</name>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1517347683044" stop="1517347683057" status="passed">
+                    <name>check</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517347683058" stop="1517347683065" status="passed">
+                    <name>check</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517347683065" stop="1517347683065" status="passed">
+                    <name>Check that condition 'true' is True</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517347683900" stop="1517347683913" status="passed">
+                    <name>check</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517347683914" stop="1517347683922" status="passed">
+                    <name>check</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1517347683922" stop="1517347683922" status="passed">
+                    <name>Check that condition 'true' is True</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="AutoTestLK"/>
+                <label name="testClass" value="hw7.JDITest"/>
+                <label name="testMethod" value="loginTest"/>
+                <label name="host" value="Елизавета-ПК"/>
+                <label name="thread" value="2548@Елизавета-ПК.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
